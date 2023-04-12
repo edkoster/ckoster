@@ -1,0 +1,12 @@
+body {
+    margin: auto;
+    width: 1200px;
+    padding: 50px;
+    font-family: 'Avenir', sans-serif;
+    color: #33475b;
+}
+img{
+    padding: 10px;
+    max-inline-size: 100%;
+    block-size: auto;
+}
