@@ -1,12 +1,17 @@
-body {
-    margin: auto;
-    width: 1200px;
-    padding: 50px;
-    font-family: 'Avenir', sans-serif;
-    color: #33475b;
+.card {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
 }
-img{
-    padding: 10px;
-    max-inline-size: 100%;
-    block-size: auto;
+
+.card img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.card img.front:hover {
+    opacity: 0;
 }
