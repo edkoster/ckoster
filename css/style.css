@@ -1,3 +1,8 @@
+body {
+    max-width: 2400px;
+    margin: auto;
+}
+
 .card {
     position: relative;
     width: 80%;
