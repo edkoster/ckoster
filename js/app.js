@@ -9,21 +9,14 @@ document.addEventListener('DOMContentLoaded', function () {
   if (document.body.classList.contains('photos')) {
     initGallery();
   }
-
-
 }, false);
 
 
 function initIndex()
 {
   let cardFront = document.getElementById('card-front');
-
   let cardContainer = document.getElementsByClassName('card-container')
-  console.log('height: '+ cardFront.height) ;
   cardContainer[0].style.height = cardFront.height + 'px';
-  console.log(cardContainer[0])
-  console.log('height: '+ cardContainer[0].height) ;
-
 }
 
 function initGallery()
