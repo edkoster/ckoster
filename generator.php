@@ -33,6 +33,9 @@ class FileGenerator
             $photos[] = $file;
         }
 
+
+        sort($photos);
+
         return $photos;
     }
 
