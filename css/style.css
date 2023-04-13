@@ -3,20 +3,26 @@ body {
     margin: auto;
 }
 
-.card {
+.card-container {
     position: relative;
     width: 80%;
-    height: 100%;
     margin: 0 auto;
+    height: 100%;
 }
 
-.card img {
+.card-container img {
     width: 100%;
     position: absolute;
     left: 0;
     transition: opacity 1s ease-in-out;
 }
 
-.card img.front:hover {
+.card-container img.front:hover {
     opacity: 0;
+}
+
+.button {
+    margin-top: 25px;
+    text-align: center;
+
 }

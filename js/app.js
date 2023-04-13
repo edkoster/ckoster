@@ -1,7 +1,37 @@
-lightGallery(document.getElementById('lightgallery'), {
-  plugins: [lgAutoplay, lgFullscreen, lgThumbnail],
-  licenseKey: 'your_license_key',
-  speed: 500,
-  slideShowInterval: 4000,
-  // ... other settings
-});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  if (document.body.classList.contains('index')) {
+    initIndex();
+  }
+
+  if (document.body.classList.contains('photos')) {
+    initGallery();
+  }
+
+
+}, false);
+
+
+function initIndex()
+{
+  let cardFront = document.getElementById('card-front');
+
+  let cardContainer = document.getElementsByClassName('card-container')
+  console.log('height: '+ cardFront.height) ;
+  cardContainer[0].style.height = cardFront.height + 'px';
+  console.log(cardContainer[0])
+  console.log('height: '+ cardContainer[0].height) ;
+
+}
+
+function initGallery()
+{
+  lightGallery(document.getElementById('lightgallery'), {
+    plugins: [lgAutoplay, lgFullscreen, lgThumbnail],
+    licenseKey: 'your_license_key',
+    speed: 500,
+    slideShowInterval: 4000,
+  });
+}
