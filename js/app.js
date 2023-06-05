@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
 function initIndex()
 {
   let cardFront = document.getElementById('card-front');
-  let cardContainer = document.getElementsByClassName('card-container')
+  let cardContainer = document.getElementsByClassName('card-container');
   cardContainer[0].style.height = cardFront.height + 'px';
 }
 
