@@ -26,3 +26,30 @@ body {
     text-align: center;
 
 }
+
+#lightgallery {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#lightgallery a {
+    overflow: hidden;
+}
+
+#lightgallery img {
+    display: inline;
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    padding: 0.25rem;
+    padding: 0.25rem;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    transition: 0.3s;
+    background-color: #fff;
+}
+#lightgallery img:hover {
+    transform: scale(1.1);
+    overflow: hidden;
+}
