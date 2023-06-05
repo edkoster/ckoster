@@ -1,21 +1,20 @@
+window.addEventListener("load", (event) => {
 
+    if (document.body.classList.contains('index')) {
+      initIndex();
+    }
 
-document.addEventListener('DOMContentLoaded', function () {
-
-  if (document.body.classList.contains('index')) {
-    initIndex();
-  }
-
-  if (document.body.classList.contains('photos')) {
-    initGallery();
-  }
-}, false);
+    if (document.body.classList.contains('photos')) {
+      initGallery();
+    }
+});
 
 
 function initIndex()
 {
   let cardFront = document.getElementById('card-front');
   let cardContainer = document.getElementsByClassName('card-container');
+
   cardContainer[0].style.height = cardFront.height + 'px';
 }
 
