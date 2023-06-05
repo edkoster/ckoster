@@ -36,17 +36,28 @@ h1 {
     font-size: 3rem;
 }
 
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
 .gallery a {
     overflow: hidden;
+    background-color: #ffffff;
+    background-clip: border-box;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    margin: 0.25rem;
 }
 
 .gallery img {
-    display: inline;
+    display: flex;
     object-fit: cover;
     width: 250px;
     height: 250px;
-    padding: 0.25rem;
-    margin: 0.25rem;
-    border: 1px solid #dee2e6;
-    border-radius: 0.25rem;
+    transition: 0.3s;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.gallery img:hover {
+    transform: scale(1.1);
 }

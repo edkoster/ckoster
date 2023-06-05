@@ -20,6 +20,7 @@ function initIndex()
 
 function initGallery()
 {
+  alert('init!');
   lightGallery(document.getElementById('lightgallery'), {
     plugins: [lgAutoplay, lgFullscreen, lgThumbnail],
     licenseKey: 'your_license_key',
