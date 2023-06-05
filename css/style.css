@@ -1,12 +1,17 @@
 body {
     max-width: 2400px;
     margin: auto;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.card-container {
-    position: relative;
+article {
     width: 80%;
     margin: 0 auto;
+}
+
+/* Index page */
+.card-container {
+    position: relative;
     height: 100%;
 }
 
@@ -24,32 +29,24 @@ body {
 .button {
     margin-top: 25px;
     text-align: center;
-
 }
 
-#lightgallery {
-    max-width: 1200px;
-    width: 80%;
-    margin: 0 auto;
+/* Gallery */
+h1 {
+    font-size: 3rem;
 }
 
-#lightgallery a {
+.gallery a {
     overflow: hidden;
 }
 
-#lightgallery img {
+.gallery img {
     display: inline;
     object-fit: cover;
     width: 250px;
     height: 250px;
     padding: 0.25rem;
-    padding: 0.25rem;
+    margin: 0.25rem;
     border: 1px solid #dee2e6;
     border-radius: 0.25rem;
-    transition: 0.3s;
-    background-color: #fff;
-}
-#lightgallery img:hover {
-    transform: scale(1.1);
-    overflow: hidden;
 }
