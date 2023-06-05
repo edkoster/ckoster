@@ -5,11 +5,7 @@ It contains just the card and a photo gallery
 ## Usage
 
 ## Todo
-- Styling of images
-- Random start point of images list
 - finetune Generate script to build images list html
-
-
 
 ## Tools
 - https://www.lightgalleryjs.com/
